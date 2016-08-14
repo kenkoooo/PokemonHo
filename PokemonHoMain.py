@@ -39,10 +39,12 @@ class Genymotion:
         lng = self.execute("gps getlongitude")
         lng = lng.replace("GPS Longitude: ", "")
         lng = float(lng)
-        return {
+        loc = {
             "lat": lat,
             "lng": lng
         }
+        print(loc)
+        return loc
 
 
 def distance(a, b):
