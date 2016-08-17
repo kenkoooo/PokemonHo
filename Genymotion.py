@@ -2,6 +2,7 @@ from subprocess import Popen, PIPE
 
 
 class Genymotion:
+
     def __init__(self, shell):
         self.shell = shell
 
